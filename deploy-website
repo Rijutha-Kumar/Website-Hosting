@@ -1,0 +1,57 @@
+#install Jenkins in Amazon linux
+sudo yum update –y
+sudo yum update
+sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo yum upgrade
+sudo yum install jenkins java-1.8.0-openjdk-devel
+sudo systemctl daemon-reload
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+ cat /var/lib/jenkins/secrets/initialAdminPassword
+#changing the authentication
+vi /etc/passwd
+id ec2-user
+vi /etc/sudoers
+sudo systemctl restart jenkins
+sudo systemctl status jenkins
+ls
+ls -tl
+rm -rf *
+ls
+cd html/
+ ls -a
+clear
+ls
+ls -a
+sudo systemctl status jenkins
+ls -lrt
+ls -a
+clear
+cd html/
+cd html
+#install Git
+sudo yum install git -y
+git -- version
+ls -lrta
+cd .git
+git init
+ cd .git
+ls -lrt
+git status
+clear
+#path of the html file – remove the content – remove .git 
+cd /var/www/html
+ls
+ls -tl
+rm -rf *
+ ls
+cd html/
+ls
+ls -a
+rm -rf .git/
+cat /var/www/html/
+ls
+cat /etc/httpd/conf.d/welcome.conf
+cat /etc/httpd/conf.d/welcome.conf
+
