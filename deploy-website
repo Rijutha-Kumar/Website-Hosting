@@ -8,7 +8,7 @@ sudo yum install jenkins java-1.8.0-openjdk-devel
 sudo systemctl daemon-reload
 sudo systemctl start jenkins
 sudo systemctl status jenkins
- cat /var/lib/jenkins/secrets/initialAdminPassword
+cat /var/lib/jenkins/secrets/initialAdminPassword
 #changing the authentication
 vi /etc/passwd
 id ec2-user
@@ -20,7 +20,7 @@ ls -tl
 rm -rf *
 ls
 cd html/
- ls -a
+ls -a
 clear
 ls
 ls -a
@@ -36,7 +36,7 @@ git -- version
 ls -lrta
 cd .git
 git init
- cd .git
+cd .git
 ls -lrt
 git status
 clear
@@ -45,7 +45,7 @@ cd /var/www/html
 ls
 ls -tl
 rm -rf *
- ls
+ls
 cd html/
 ls
 ls -a
